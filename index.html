@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="start-page" class="page">
+      <h1>Meal Guessing Game</h1>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game-page" class="page hidden">
+      <div id="meal-display">
+        <img id="meal-image" src="" alt="Meal image" />
+        <div id="ingredients"></div>
+        <p id="instructions"></p>
+      </div>
+      <div id="guess-section">
+        <input
+          type="text"
+          id="guess-input"
+          placeholder="Enter cuisine or category"
+        />
+        <button id="submit-guess">Submit Guess</button>
+      </div>
+      <div id="feedback"></div>
+      <div id="round-counter">Round: 1/3</div>
+    </div>
+
+    <div id="results-page" class="page hidden">
+      <!-- Game Over -->
+      <h2>Game Over!</h2>
+      <p id="final-score">Your score: 0/3</p>
+      <div id="meals-summary"></div>
+      <button id="restart-btn">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
