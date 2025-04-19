@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meal Guessing Game</title>
+    <title>Valentine Meal Guessing Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,8 +14,11 @@
 
     <div id="game-page" class="page hidden">
       <div id="meal-display">
-        <img id="meal-image" src="" alt="Meal image" />
-        <div id="ingredients"></div>
+        <div id="meal-display" class="meal-container">
+          <div id="ingredients" class="ingredients-panel"></div>
+          <img id="meal-image" src="" alt="Meal image" class="meal-image" />
+        </div>
+        <h4>Instruction How to make:</h4>
         <p id="instructions"></p>
       </div>
       <div id="guess-section">
