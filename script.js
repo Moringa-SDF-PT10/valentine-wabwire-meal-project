@@ -103,6 +103,7 @@ function submitGuess() {
   const correctArea = currentMeal.strArea.toLowerCase(); //user can type in uppper case we control it here
 
   if (guess === correctCategory || guess === correctArea) {
+    //check whole guess exactly
     score++; //keep track of score
     feedback.textContent = "Correct!";
     feedback.className = "correct";
